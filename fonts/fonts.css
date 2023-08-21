@@ -6,14 +6,14 @@
 }
 
 @font-face {
-  font-family: 'NotoSerif';
+  font-family: NotoSerif;
   src: url(NotoSerif.woff) format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Fira Sans Condensed';
+  font-family: NunitoSans-Regular;
   src: url(NunitoSans-Regular.woff) format('woff');
   font-weight: 400;
   font-style: normal;
