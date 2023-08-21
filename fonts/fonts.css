@@ -1,0 +1,20 @@
+@font-face {
+  font-family: Mulish;
+  src: url(Mulish-Regular.woff2) format('woff2'), url(Mulish-Regular.woff) format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSerif';
+  src: url(NotoSerif.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url(NunitoSans-Regular.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
