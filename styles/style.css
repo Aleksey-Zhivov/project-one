@@ -1,3 +1,4 @@
+/* stylelint-disable color-function-notation */
 /* stylelint-disable shorthand-property-no-redundant-values */
 /* stylelint-disable no-descending-specificity */
 /* stylelint-disable-next-line rule-empty-line-before */
@@ -17,10 +18,11 @@ html {
   max-width: 1440px;
   margin: auto;
   color: #000;
-  font-family: NunitoSans-Regular, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 16px;
   background-color: #333;
   block-size: 100%;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -76,6 +78,7 @@ ol {
   height: 68px;
   margin-top: 8px;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 .veji {
@@ -86,7 +89,7 @@ ol {
   width: 69px;
   height: 50px;
   color: #C6FD50;
-  font-family: NotoSerif;
+  font-family: NotoSerif, serif;
   font-weight: 400;
   font-size: 36px;
   cursor: default;
@@ -101,7 +104,7 @@ ol {
 
 .header__link {
   color: #FBFBFB;
-  font-family: Nunito;
+  font-family: Nunito, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -124,7 +127,7 @@ ol {
 .header_h1 {
   margin-bottom: 16px;
   color: #FBFBFB;
-  font-family: Mulish;
+  font-family: Mulish, sans-serif;
   font-weight: 400;
   font-size: 60px;
 }
@@ -132,7 +135,7 @@ ol {
 .header_decription {
   margin-bottom: 60px;
   color: #FBFBFB;
-  font-family: Mulish;
+  font-family: Mulish, sans-serif;
   font-weight: 400;
   font-size: 28px;
   text-align: center;
@@ -146,7 +149,7 @@ ol {
   margin-bottom: 460px;
   border: 1px solid black;
   color: #333;
-  font-family: Nunito;
+  font-family: Nunito, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -215,7 +218,7 @@ ol {
   width: 69px;
   height: 50px;
   color: #333;
-  font-family: NotoSerif;
+  font-family: NotoSerif, sans-serif;
   font-weight: 400;
   font-size: 36px;
   text-decoration: none;
@@ -231,7 +234,7 @@ ol {
 
 .about__link {
   color: #333;
-  font-family: Nunito;
+  font-family: Nunito, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -256,7 +259,7 @@ ol {
   grid-template-columns: 1fr 1fr;
   border-top: 2px solid black;
   min-height: 944px;
-  background-color: rgba(33, 16, 16, 0.1);
+  background-color: #F5F5F5;
 }
 
 .about__image {
@@ -276,7 +279,7 @@ ol {
 
 .about__article-header {
   color: #333;
-  font-family: Mulish;
+  font-family: Mulish, sans-serif;
   font-size: 48px;
   font-weight: 400;
   line-height: 60px;
@@ -287,7 +290,7 @@ ol {
   display: flex;
   flex-direction: column;
   color:#333;
-  font-family: Nunito;
+  font-family: Nunito, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px; 
@@ -298,19 +301,19 @@ ol {
 }
 
 .materials {
-  display: block;
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
 }
 
 .materials__header {
   color:#333;
   font-feature-settings: 'clig' off, 'liga' off;
-  font-family: Mulish;
+  font-family: Mulish, sans-serif;
   font-size: 48px;
   font-weight: 400;
   line-height: 60px;
-  padding-left: 182px;
-  padding-top: 160px;
+  margin: 160px auto 60px 182px;
 }
 
 .materials__list {
@@ -319,7 +322,7 @@ ol {
   gap: 16px;
   justify-content: center;
   overflow: visible;
-  margin: 60px auto 160px auto;
+  margin: 60xp auto 60px auto;
 }
 
 .materials-link{
@@ -335,30 +338,168 @@ ol {
   flex-direction: column;
   justify-content: space-between;
   gap: 16px;
-  margin: 60px 0 60px 182px;
+  padding-left: 144px;
 }
 
 .materials__title {
   color: #333;
-  font-family: Mulish;
+  font-family: Mulish, sans-serif;
   font-size: 28px;
   font-weight: 400;
-}
-
-.materials__list::-webkit-scrollbar {
-  height: 4px;               /* ширина всей полосы прокрутки */
-}
-
-.materials__list::-webkit-scrollbar-track {
-  background: #fff;        /* цвет зоны отслеживания */
-}
-
-.materials__list::-webkit-scrollbar-thumb {
-  background-color: #333;    /* цвет бегунка */
 }
 
 .materials__description {
   display: block;
   margin-left: 720px;
-  padding: 60px 140px; 
+  padding: 60px 140px;
+  color: #333;
+  font-family: Nunito, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; 
+  opacity: 0.8;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F5F5;
+}
+
+.steps__list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  text-decoration: none;
+  margin-bottom: 253px;
+}
+
+.steps__header {
+  color: #333;
+  font-family: Mulish, sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin: 160px auto 60px 182px;
+}
+
+.steps-link {
+  text-decoration: none;
+  color: #333;
+  font-family: Nunito, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.steps__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  background-color: #fff;
+  padding: 60px 40px;
+  width: 340px;
+  height: 411px;
+  position: relative;
+}
+
+.steps__list-item:first-child {
+  margin-left: 16px;
+}
+
+.article__header {
+  font-size: 28px;
+}
+
+.article__text {
+  font-size: 16px;
+}
+
+.article-icon {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+
+.projects {
+  display: block;
+  background-image: url(../images/projects_back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1024px;
+  width: 100%;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.projects__item {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: #fff;
+  width: 260px;
+  height: 360px;
+  position: absolute;
+  left: 388px;
+  top: 280px;
+}
+
+.projects__item-image {
+  display: block;
+  background-image: url(../images/chair.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.close_item {
+  margin-left: 220px;
+  margin-top: 19px;
+  background-image: url(../images/esc\ button.svg);
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.close_item:hover {
+  transform: scale(1.2);
+}
+
+.projects__item-description {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  gap: 16px;
+}
+
+.projects__item-title {
+  color: #333;
+  font-family: Mulish, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.projects__item-text {
+  color: #333;
+  font-family: Nunito, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.button-right {
+  width: 300px;
+  height: 1025px;
+  border: none;
+  display: block;
+  background-color: transparent;
+  background-image: url(../images/button_right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 1140px;
+  cursor: pointer;
+}
+
+.button-right:hover {
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.60);
 }

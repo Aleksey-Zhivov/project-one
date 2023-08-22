@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body class="page">
-    <header class="cover">
+    <header class="cover" id="cover">
       <nav class="header__list">
         <ul class="header__links-list">
           <li class="header__links-list-item">
@@ -19,7 +19,7 @@
             <a class="header__link" href="#materials">Материалы</a>
           </li>
         </ul>
-        <a class="header__logo" href="#0">
+        <a class="header__logo" href="#cover">
           <img 
           class="header__logo-image" 
           src="./images/header logo.svg" 
@@ -50,13 +50,13 @@
         <nav class="about__list">
           <ul class="about__links-list">
             <li class="about__links-list-item">
-              <a class="about__link" href="#0">О нас</a>
+              <a class="about__link" href="#about">О нас</a>
             </li>
             <li class="about__links-list-item">
-              <a class="about__link" href="#0">Материалы</a>
+              <a class="about__link" href="#materials">Материалы</a>
             </li>
           </ul>
-          <a class="about__logo" href="#0">
+          <a class="about__logo" href="#cover">
             <img 
             class="about__logo-image" 
             src="./images/about logo.svg" 
@@ -67,10 +67,10 @@
           </a>
           <ul class="about__links-list">
             <li class="about__links-list-item">
-              <a class="about__link" href="#0">Проекты</a>
+              <a class="about__link" href="#projects">Проекты</a>
             </li>
             <li class="about__links-list-item">
-              <a class="about__link" href="#0">Контакты</a>
+              <a class="about__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -171,10 +171,89 @@
         </p>
       </section>
       <section class="steps">
-
+        <h1 class="steps__header">Этапы работы</h1>
+        <ul class="steps__list">
+          <li class="steps__list-item">
+            <a class="steps-link" href="#0">
+              <article class="steps__card"> 
+                <h2 class="article__header">
+                  Знакомство
+                </h2>
+                <p class="article__text">
+                  На первой встрече мы обсуждаем сроки, бюджет, что входит в наши услуги, ваши идеи и варианты их реализации, рассказываем о подрядчиках, обсуждаем варианты экономии. Вы можете задать нам любые вопросы.
+                </p>
+                <img 
+                  class="article-icon"
+                  src="./images/steps_icon.svg"
+                  alt="стрелка, показывающая переход к следующей карточке">
+              </article>
+            </a>
+          </li>
+          <li class="steps__list-item">
+            <a class="steps-link" href="#0">
+              <article class="steps__card"> 
+                <h2 class="article__header">
+                  Подготовка
+                </h2>
+                <p class="article__text">
+                  Вместе с клиентом формулируем корректное ТЗ, которое включает в себя визуализацию изделия, эскизный чертёж с габаритами, информацию по материалам, срок реализации проекта и другие обязательные пункты.
+                </p>
+                <img 
+                  class="article-icon"
+                  src="./images/steps_icon.svg"
+                  alt="стрелка, показывающая переход к следующей карточке">
+              </article>
+            </a>
+          </li>
+          <li class="steps__list-item">
+            <a class="steps-link" href="#0">
+              <article class="steps__card"> 
+                <h2 class="article__header">
+                  Рабочий проект
+                </h2>
+                <p class="article__text">
+                  Создаем рабочую документацию и чертежи. Это фундамент качественного производства. На этом этапе утверждаем с клиентом все габариты, материалы и чертежи, после приступаем к производству.
+                </p>
+                <img 
+                  class="article-icon"
+                  src="./images/steps_icon.svg"
+                  alt="стрелка, показывающая переход к следующей карточке">
+              </article>
+            </a>
+          </li>
+          <li class="steps__list-item">
+            <a class="steps-link" href="#0">
+              <article class="steps__card"> 
+                <h2 class="article__header">
+                  Производство
+                </h2>
+                <p class="article__text">
+                  Производство занимает от 15 рабочих дней, в зависимости от сложности и объёма. Монтажом тоже занимаемся самостоятельно.
+                </p>
+                <img 
+                  class="article-icon"
+                  src="./images/steps_icon.svg"
+                  alt="стрелка, показывающая переход к следующей карточке">
+              </article>
+            </a>
+          </li>
       </section>
       <section class="projects" id="projects">
-
+        <div class="projects__item">
+          <div class="projects__item-image">
+            <button 
+            class="close_item"></button>
+          </div>
+          <article class="projects__item-description">
+            <h3 class="projects__item-title">
+              Кресло
+            </h3>
+            <p class="projects__item-text">
+              Для столовой зоны гостиной, выполнено из натурального дерева, дополнено мягким сиденьем
+            </p>
+          </article>
+        </div>
+        <button class="button-right pseudo_button"></button>
       </section>
       <section class="reviews">
 
