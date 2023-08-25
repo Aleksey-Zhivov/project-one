@@ -43,7 +43,7 @@
       <p class="header_decription">
         Производство корпусной и встроенной мебели на заказ по вашим эскизам
       </p>
-      <button class="header__button">Оставить заявку</button>
+      <button class="header__button" type="button">Оставить заявку</button>
     </header>
     <main>
       <section class="about" id="about">
@@ -165,6 +165,19 @@
               </article>
             </a>
           </li>
+          <li class="materials__list-item">
+            <a class="materials-link" href="#0">
+              <article class="card">
+                <img 
+                  class="materials_type_terazzo"
+                  src="./images/glass.jpg"
+                  alt="Картинка с изображением материала Стекло">  
+                <h3 class="materials__title">
+                  Стекло
+                </h3>
+              </article>
+            </a>
+          </li>          
         </ul>
         <p class="materials__description">
           Наша продукция экологична и безопасна, благодаря используемым в производстве натуральным материалам. Корпусная и фасадная мебель изготавливается из массива дерева, для столешниц и изготовления моек используется натуральный камень. Изящно смотрится фурнитура из таких видов металла, как латунь и медь.
@@ -239,29 +252,57 @@
           </li>
       </section>
       <section class="projects" id="projects">
-        <div class="projects__item">
-          <div class="projects__item-image">
-            <button 
-            class="close_item"></button>
+        <div class="item-wrapper">
+          <label 
+            for="pseudo-button_chair" 
+            class="item-button-chair">
+          </label>
+          <input 
+            type="checkbox" 
+            id="pseudo-button_chair">
+          <div class="project_item-chair">
+            <div class="project_item-chair-image">
+              <button class="close_item"></button>
+            </div>
+            <article class="projects__item-description">
+              <h3 class="projects__item-title">
+                Кресло
+              </h3>
+              <p class="projects__item-text">
+                 Для столовой зоны гостиной, выполнено из натурального дерева, дополнено мягким сиденьем
+              </p>
+            </article>
           </div>
-          <article class="projects__item-description">
-            <h3 class="projects__item-title">
-              Кресло
-            </h3>
-            <p class="projects__item-text">
-              Для столовой зоны гостиной, выполнено из натурального дерева, дополнено мягким сиденьем
-            </p>
-          </article>
-        </div>
-        <button class="button-right pseudo_button"></button>
+          <label 
+            for="pseudo-button_table" 
+            class="item-button-table">
+          </label>
+          <input
+            type="checkbox" 
+            id="pseudo-button_table">
+          <div class="project_item-table">
+            <div class="project_item-table-image">
+              <button class="close_item"></button>
+            </div>
+            <article class="projects__item-description">
+              <h3 class="projects__item-title">
+                Стол
+              </h3>
+              <p class="projects__item-text">
+                Для столовой зоны гостиной, выполнено из натурального дерева, с офигенными книгами из ламповой бумаги.
+              </p>
+            </article>
+          </div>
+          <button class="button-right" type="button"></button>
+        </div> 
       </section>
       <section class="reviews">
-
       </section>
       <section class="contacts" id="contacts">
 
       </section>
     </main>
     <footer class="footer"></footer>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

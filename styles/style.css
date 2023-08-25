@@ -321,8 +321,13 @@ ol {
   flex-direction: row;
   gap: 16px;
   justify-content: center;
-  overflow: visible;
-  margin: 60xp auto 60px auto;
+  overflow: auto hidden;
+  max-width: 1258px;
+  margin-left: 182px;
+}
+
+.materials__list::-webkit-scrollbar {
+  width: 0;
 }
 
 .materials-link{
@@ -331,6 +336,7 @@ ol {
   cursor: default;
   width: 260px;
   height: 371px;
+  margin-bottom: 60px;
 }
 
 .card {
@@ -338,7 +344,7 @@ ol {
   flex-direction: column;
   justify-content: space-between;
   gap: 16px;
-  padding-left: 144px;
+  padding-left: 192px;
 }
 
 .materials__title {
@@ -351,7 +357,7 @@ ol {
 .materials__description {
   display: block;
   margin-left: 720px;
-  padding: 60px 140px;
+  padding: 0 140px 60px 140px;
   color: #333;
   font-family: Nunito, sans-serif;
   font-size: 16px;
@@ -381,6 +387,7 @@ ol {
   font-weight: 400;
   line-height: 1.25;
   margin: 160px auto 60px 182px;
+  overflow-x: scroll;
 }
 
 .steps-link {
@@ -398,7 +405,7 @@ ol {
   gap: 40px;
   background-color: #fff;
   padding: 60px 40px;
-  width: 340px;
+  max-width: 340px;
   height: 411px;
   position: relative;
 }
@@ -426,33 +433,70 @@ ol {
   background-image: url(../images/projects_back.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 1024px;
+  max-height: 1024px;
   width: 100%;
   flex-shrink: 0;
   position: relative;
 }
 
-.projects__item {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+.item-button-chair {
+  background-color: transparent;
+  background-image: url(../images/button_item.svg);
+  background-repeat: no-repeat;
+  border: none;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 508px;
+  top: 680px;
+  cursor: pointer;
+}
+
+.item-button-chair:focus {
+  outline: none;
+}
+
+.item-button-chair:focus-visible {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.item-button-chair:hover {
+  transform: scale(1.5);
+}
+
+.item-button-chair:active {
+  transform: scale(1);
+}
+
+.project_item-chair,
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .project_item-chair {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   width: 260px;
   height: 360px;
   position: absolute;
-  left: 388px;
+  transition: 0.3s;
   top: 280px;
+  left: 388px;
+  right: 792px;
 }
 
-.projects__item-image {
+.project_item-chair-image {
   display: block;
   background-image: url(../images/chair.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  height: 260px;
 }
 
 .close_item {
-  margin-left: 220px;
-  margin-top: 19px;
+  margin: 20px 20px auto 220px;
   background-image: url(../images/esc\ button.svg);
   width: 20px;
   height: 20px;
@@ -485,6 +529,63 @@ ol {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.4;
+}
+
+.item-button-table {
+  background-color: transparent;
+  background-image: url(../images/button_item.svg);
+  background-repeat: no-repeat;
+  border: none;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 897px;
+  top: 590px;
+  cursor: pointer;
+}
+
+.item-button-table:focus {
+  outline: none;
+}
+
+.item-button-table:focus-visible {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.item-button-table:hover {
+  transform: scale(1.5);
+}
+
+.item-button-table:active {
+  transform: scale(1);
+}
+
+.project_item-table,
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .project_item-table {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 260px;
+  height: 360px;
+  position: absolute;
+  transition: 0.3s;
+  top: 190px;
+  bottom: 773px;
+  left: 779px;
+  right: 401px;
+}
+
+.project_item-table-image {
+  display: block;
+  background-image: url(../images/table.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 260px;
 }
 
 .button-right {
