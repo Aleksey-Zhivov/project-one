@@ -1,20 +1,23 @@
 @font-face {
-  font-family: Mulish;
-  src: url(Mulish.woff2) format('woff2'), url(Mulish.woff) format('woff');
+  font-family: 'Mulish';
+  src: 
+    local('Mulish'),
+    url(../fonts/Mulish.woff2) format('woff2'),
+    url(../fonts/Mulish.woff) format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: NotoSerif;
-  src:  url(NotoSerif.woff2) format('woff2'), url(NotoSerif.woff) format('woff');
+  src:  url(../fonts/NotoSerif.woff2) format('woff2'), url(../fonts/NotoSerif.woff) format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: Nunito;
-  src: url(Nunito.woff2) format('woff2'), url(NunitoSans-Regular.woff) format('woff');
+  src: url(../fonts/Nunito.woff2) format('woff2'), url(../fonts/NunitoSans-Regular.woff) format('woff');
   font-weight: 400;
   font-style: normal;
 }

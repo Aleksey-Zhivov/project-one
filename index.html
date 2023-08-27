@@ -295,16 +295,86 @@
               </p>
             </article>
           </div>
-          <button class="button-right" type="button"></button>
-        </div> 
+        </div>
+        <button class="button-right" type="button"></button> 
       </section>
       <section class="reviews">
+        <article class="reviews__article">
+          <h1 class="reviews__article-header">
+            Ещё и ещё
+          </h1>
+          <p class="reviews__article-text">
+            Великолепная фабрика по производству мебели! За 2020 год воспользовался услугами Aveji три раза. Все мои друзья и родные поражены качеством исполнения, культурой обслуживания и логистикой компании. Качество и цена –– непоколебимые преимущества Aveji! Спасибо Вам за работу!
+          </p>
+          <p class="reviews__article-text">
+            Илья К.
+          </p>
+        </article>
+        <div class="reviews__image">
+          <button class="button-right" type="button"></button>
+        </div>     
       </section>
       <section class="contacts" id="contacts">
-
+        <span class="contacts-list">
+          <span class="contacts-list__article">
+            <h2 class="contacts-list__header">
+              Контакты
+            </h2>
+            <p class="contacts-list__address">
+              г. Москва<br>ул. Щелковская, 
+            </p>
+            <p class="contacts-list__address">
+              д. 12 Телефон: +7(977)162-94-29<br>E-mail: info@aveji.ru
+            </p>
+          </span>
+        </span>
+        <div class="contacts-form">
+          <h2 class="contacts-form__header">
+            Сотрудничество
+          </h2>
+          <label class ="contacts-form__list" for="#0">
+            <input 
+              class="contacts-form__list-field"
+              type="text" 
+              name="name" 
+              id="name"
+              placeholder="Имя">
+            <input 
+              class="contacts-form__list-field"
+              type="email" 
+              name="email" 
+              id="email"
+              placeholder="E-mail">
+            <input 
+              class="contacts-form__list-field"
+              type="tel" 
+              name="phone" 
+              id="phone"
+              placeholder="Телефон">
+          </label>
+          <button
+            class="header__button" 
+            type="button">
+            Оставить заявку
+          </button>          
+        </div>
       </section>
     </main>
-    <footer class="footer"></footer>
-    <script src="./scripts/script.js"></script>
+    <footer class="footer">
+      <span class="app-links">
+        <a href="http://button.dekel.ru/" target="_blank">
+          <img 
+          class="app-links__item"
+          src="./images/link google play.svg"
+          alt="ссылка на скачивание приложения из Google Play">
+        </a>
+        <a href="https://www.solarsystemscope.com/" target="_blank">
+          <img 
+          class="app-links__item" 
+          src="./images/link appstore.svg"
+          alt="ссылка на скачивание приложения из AppStore">
+        </a>
+      </span>
+    </footer>
   </body>
 </html>
