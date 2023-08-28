@@ -589,6 +589,7 @@ input[type="checkbox"]:checked ~ .project_item-table {
   height: 260px;
   background-image: url(../images/table.jpeg);
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
 }
 
