@@ -129,7 +129,7 @@ ol {
 .header_h1 {
   margin-bottom: 16px;
   color: #FBFBFB;
-  font-family: 'Mulish', sans-serif;
+  font-family: Mulish, sans-serif;
   font-weight: 400;
   font-size: 60px;
 }
@@ -143,7 +143,7 @@ ol {
   text-align: center;
 }
 
-.header__button {
+.button {
   position: relative;
   display: inline-block;
   width: 440px;
@@ -157,24 +157,26 @@ ol {
   text-align: center;
   background-color: #C6FD50;
   cursor: pointer;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
 }
 
-.header__button:focus {
+.button:focus {
   outline: none;
 }
 
-.header__button:focus-visible {
+.button:focus-visible {
   outline: 1px solid black;
 }
 
-.header__button:active {
-  box-shadow: none;
-  background-color: #fde350;
+.button:hover {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15); 
+  background-color: #2356F6;
+  color: #FBFBFB;
 }
 
-.header__button:hover {
-  box-shadow: 0 4px 16px 0 black;
-  background-color: #fde350;
+.button:active {
+  background-color: #122B7B;
+  color: #FBFBFB;
 }
 
 .about {
@@ -373,6 +375,15 @@ ol {
   background-color: #F5F5F5;
 }
 
+.steps__header {
+  margin: 160px auto 60px 182px;
+  color: #333;
+  font-family: Mulish, sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.25;
+}
+
 .steps__list {
   display: flex;
   flex-direction: row;
@@ -380,16 +391,6 @@ ol {
   gap: 16px;
   margin-bottom: 253px;
   text-decoration: none;
-}
-
-.steps__header {
-  margin: 160px auto 60px 182px;
-  overflow-x: scroll;
-  color: #333;
-  font-family: Mulish, sans-serif;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 1.25;
 }
 
 .steps-link {
@@ -596,7 +597,7 @@ input[type="checkbox"]:checked ~ .project_item-table {
   height: 1025px;
   border: none;
   background-color: transparent;
-  background-image: url(../images/button_right.svg);
+  background-image: url(../images/button_right_default.svg);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -604,6 +605,7 @@ input[type="checkbox"]:checked ~ .project_item-table {
 
 .button-right:hover {
   box-shadow: 0 4px 16px rgba(255, 255, 255, 0.60);
+  background-image: url(../images/button_right_hovered.svg);
 }
 
 .reviews {
@@ -718,7 +720,7 @@ input[type="checkbox"]:checked ~ .project_item-table {
   border: none;
   color: #333;
   font-family: Nunito, sans-serif;
-  font-size: 20xp;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.45;
 }
@@ -731,12 +733,28 @@ input[type="checkbox"]:checked ~ .project_item-table {
   outline: none;
 }
 
-.contacts-form__list-field:focus-visible,
+.contacts-form__list-field:focus-visible {
+  outline: none;
+}
+
+
 .contacts-form__list-field:active {
   outline: 1px solid black;
   font-family: inherit;
   font-size: inherit;
   font-style: inherit;
+}
+
+.contacts-form__list-field[type="text"]:invalid,
+.contacts-form__list-field[type="email"]:invalid,
+.contacts-form__list-field[type="tel"]:invalid {
+  border: 1px solid #D423AD;
+}
+
+.contacts-form__list-field[type="text"]:valid:not(:placeholder-shown),
+.contacts-form__list-field[type="email"]:valid:not(:placeholder-shown),
+.contacts-form__list-field[type="tel"]:valid:not(:placeholder-shown) {
+  border: 1px solid #C6FD50;
 }
 
 .footer {
@@ -755,7 +773,6 @@ input[type="checkbox"]:checked ~ .project_item-table {
   max-width: 294px;
   display: flex;
   gap: 16px;
-
 }
 
 .app-links__item {

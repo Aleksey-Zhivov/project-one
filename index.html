@@ -43,7 +43,9 @@
       <p class="header_decription">
         Производство корпусной и встроенной мебели на заказ по вашим эскизам
       </p>
-      <button class="header__button" type="button">Оставить заявку</button>
+      <a href="#contacts">
+        <button class="button" type="button">Оставить заявку</button>
+      </a>
     </header>
     <main>
       <section class="about" id="about">
@@ -332,7 +334,7 @@
           <h2 class="contacts-form__header">
             Сотрудничество
           </h2>
-          <label class ="contacts-form__list" for="#0">
+          <form action="#" class ="contacts-form__list" novalidate>
             <input 
               class="contacts-form__list-field"
               type="text" 
@@ -350,10 +352,12 @@
               type="tel" 
               name="phone" 
               id="phone"
-              placeholder="Телефон">
-          </label>
+              placeholder="Телефон"
+              minlength="11" 
+              maxlength="12">
+          </form>
           <button
-            class="header__button" 
+            class="button" 
             type="button">
             Оставить заявку
           </button>          
@@ -368,7 +372,7 @@
           src="./images/link google play.svg"
           alt="ссылка на скачивание приложения из Google Play">
         </a>
-        <a href="https://www.solarsystemscope.com/" target="_blank">
+        <a href="https://www.youtube.com/watch?app=desktop&v=dQw4w9WgXcQ" target="_blank">
           <img 
           class="app-links__item" 
           src="./images/link appstore.svg"
